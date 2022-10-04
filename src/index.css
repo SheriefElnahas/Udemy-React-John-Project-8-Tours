@@ -161,7 +161,7 @@ Variables
   }
   .title {
     text-align: center;
-    margin-bottom: 4rem;
+
   }
   .underline {
     width: 6rem;
@@ -169,6 +169,7 @@ Variables
     background: var(--clr-primary-5);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:3rem;
   }
   
   .single-tour {
@@ -188,6 +189,9 @@ Variables
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
   }
+  .single-tour p {
+    font-weight:500;
+  }
   .tour-info {
     display: flex;
     justify-content: space-between;
@@ -196,6 +200,7 @@ Variables
   }
   .tour-info h4 {
     margin-bottom: 0;
+    font-size:1.2rem;
   }
   .single-tour button {
     background: transparent;
@@ -211,6 +216,7 @@ Variables
     background: var(--clr-primary-10);
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
+    margin-top:-1rem;
   }
   .single-tour footer {
     padding: 1.5rem 2rem;
@@ -227,3 +233,7 @@ Variables
     border-radius: var(--radius);
   }
   
+  .single-tour .delete-btn:hover {
+    background:#333;
+    color:#fff;
+  }
