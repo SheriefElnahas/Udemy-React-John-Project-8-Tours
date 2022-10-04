@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Tour(props) {
+
   const [isReadMore, setIsReadMore] = React.useState(false);
 
   return (
@@ -17,7 +18,7 @@ export default function Tour(props) {
             {isReadMore ? "Show Less" : "Read More"}
           </button>
         </p>
-        <button className="delete-btn">Not Intrested</button>
+        <button className="delete-btn" onClick={() => props.removeTour(props.id)}>Not Intrested</button>
       </footer>
     </div>
   );
