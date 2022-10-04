@@ -9,9 +9,13 @@ export default function TourList(props) {
 
   return (
     <main>
-        <h1 className="title">Our Tours</h1>
+        <h1 className="title">{props.tours.length > 0 ? "Our Tours" : "No Tours Left"}</h1>
         <div className="underline"></div>
-        {toursElement}
+    
+
+        {props.tours.length > 0 ? toursElement : ""}
+
+
     </main>
   );
 }

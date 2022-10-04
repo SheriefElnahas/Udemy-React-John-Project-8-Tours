@@ -143,8 +143,8 @@ Variables
     letter-spacing: var(--spacing);
     border-color: transparent;
     cursor: pointer;
-    margin-top: 2rem;
     font-size: 1.2rem;
+    margin-left:46%;
   }
   /*
   =============== 

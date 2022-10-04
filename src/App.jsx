@@ -6,7 +6,6 @@ const url = 'https://course-api.com/react-tours-project';
 
 function App() {
   const [tours, setTours] = useState([]);
-  const [isInterested, setIsInterested]  = useState(true);
 
   async function fetchTours(url) {
     const response = await fetch(url);
@@ -27,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <TourList tours={tours} removeTour={removeTour}/>
-
+      {tours.length === 0 ? <button className="btn" onClick={() => fetchTours(url)}>Refresh</button>: ""}
     </div>
   )
 }
